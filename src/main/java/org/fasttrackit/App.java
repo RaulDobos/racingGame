@@ -1,6 +1,7 @@
 package org.fasttrackit;
 
 import java.time.LocalDate;
+import java.util.Scanner;
 
 /**
  * Hello world!
@@ -8,8 +9,17 @@ import java.time.LocalDate;
  */
 public class App 
 {
-    public static void main( String[] args )
-    {
+    public static void main( String[] args ) {
+
+        System.out.println("Please enter vehicle name: ");
+        Scanner scanner = new Scanner(System.in);
+        String vehicleName = scanner.nextLine();
+
+        Scanner scanner2 = new Scanner(System.in);
+        int enteredNumber = scanner2.nextInt();
+
+        System.out.println("Entered name: " + vehicleName);
+
         System.out.println( "Welcome to the racing game!" );
 
         Car carReference = new Car();

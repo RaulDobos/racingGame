@@ -1,5 +1,7 @@
 package org.fasttrackit;
 
+import java.time.LocalDate;
+
 /**
  * Hello world!
  *
@@ -57,7 +59,8 @@ public class App
         System.out.println("Color: " + car2.color);
         System.out.println("Damage: " + car2.damaged);
 
-
+        //LocalDate newDate1 = LocalDate.now().minusMonths(2);
+        //LocalDate newDate2 = LocalDate.of(2010, 3, 10);
     }
 }
 

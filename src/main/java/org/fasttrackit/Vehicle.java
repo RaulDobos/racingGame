@@ -36,4 +36,8 @@ public class Vehicle {
 
         return traveledDistance;
     }
+
+    public void decelerate(){
+        System.out.println("This is just a demo method.");
+    }
 }

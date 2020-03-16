@@ -37,19 +37,21 @@ public class App
 //
 //        System.out.println( "Welcome to the racing game!" );
 //
-//        Engine engine1 = new Engine();
-//
-//        engine1.manufacturer = "VW";
-//        engine1.capacity = 2000;
-//
-//        Car carReference = new Car(engine1);
-//
-//        carReference.name = "Audi";
-//        carReference.color = "red";
-//        carReference.maxSpeed = 260;
-//        carReference.mileage = 6.2;
-//        carReference.fuelLevel = 100;
-//        carReference.damaged = true;
+        Engine engine1 = new Engine();
+
+        engine1.manufacturer = "VW";
+        engine1.capacity = 2000;
+
+        Car carReference = new Car(engine1);
+
+        carReference.setName("Audi");
+        carReference.setColor("red");
+        carReference.setMaxSpeed("260");
+        carReference.setMileage(6.2);
+        carReference.setFuelLevel(100);
+        carReference.setDamaged(true);
+
+        System.out.println("Name: " + carReference.getName());
 //
 ////        carReference.engine = new Engine();
 ////        carReference.engine.manufacturer = "VW";

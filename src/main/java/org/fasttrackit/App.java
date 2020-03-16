@@ -11,6 +11,9 @@ public class App
 {
     public static void main( String[] args ) {
 
+        Game game = new Game();
+        game.start();
+
         System.out.println("Please enter vehicle name: ");
         Scanner scanner = new Scanner(System.in);
         String vehicleName = scanner.nextLine();
@@ -77,9 +80,6 @@ public class App
         //LocalDate newDate1 = LocalDate.now().minusMonths(2);
         //LocalDate newDate2 = LocalDate.of(2010, 3, 10);
 
-        //modulo (modulus) operator
-//        System.out.println(4 % 2 == 0);
-//        System.out.println(4 % 3 == 0);
     }
 }
 

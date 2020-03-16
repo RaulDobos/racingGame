@@ -3,7 +3,7 @@ package org.fasttrackit;
 public class Vehicle {
 
     //static variable / class variable
-    static int totalVehicleCount;
+    private static int totalVehicleCount;
 
     //instance viariables
     private int racingNumber;
@@ -136,5 +136,9 @@ public class Vehicle {
 
     public void setDamaged(boolean damaged) {
         this.damaged = damaged;
+    }
+
+    public static int getTotalVehicleCount() {
+        return totalVehicleCount;
     }
 }

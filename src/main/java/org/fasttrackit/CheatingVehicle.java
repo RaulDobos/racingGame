@@ -4,8 +4,6 @@ public class CheatingVehicle extends Vehicle {
 
     public static final String TYPE = "CHEATER";
 
-
-
     @Override
     public double accelerate(double speed, double durationInHours) {
         System.out.println(getName() + " is accelerating with " + speed + " for " + durationInHours + "h.");
@@ -21,5 +19,9 @@ public class CheatingVehicle extends Vehicle {
 
     public CheatingVehicle clone(){
         return new CheatingVehicle();
+    }
+
+    public void fly(){
+        System.out.println("Flying!");
     }
 }

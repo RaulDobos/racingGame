@@ -5,7 +5,7 @@ public class Vehicle {
     //static variable / class variable
     private static int totalVehicleCount;
 
-    //instance viariables
+    //instance variables
     private int racingNumber;
     private String name;
     private int maxSpeed;
@@ -74,6 +74,10 @@ public class Vehicle {
         System.out.println("This is just a demo method.");
     }
 
+    protected Vehicle clone(){
+        return new Vehicle();
+    }
+
     public int getRacingNumber() {
         return racingNumber;
     }
@@ -140,5 +144,19 @@ public class Vehicle {
 
     public static int getTotalVehicleCount() {
         return totalVehicleCount;
+    }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "racingNumber=" + racingNumber +
+                ", name='" + name + '\'' +
+                ", maxSpeed=" + maxSpeed +
+                ", mileage=" + mileage +
+                ", color='" + color + '\'' +
+                ", fuelLevel=" + fuelLevel +
+                ", totalDistance=" + totalDistance +
+                ", damaged=" + damaged +
+                '}';
     }
 }
